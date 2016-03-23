@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<title>Security Vendor</title>
+
+	<link rel="stylesheet" type="text/css" href="../libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../libs/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../libs/flags/famfamfam-flags.css">
+	<link rel="stylesheet" type="text/css" href="../libs/flags/flags32.css">
+	<link rel="stylesheet" type="text/css" href="../libs/flags/flags16.css">
+	<link rel="stylesheet" type="text/css" href="../libs/pace/pace.css">
+	<link rel="stylesheet" type="text/css" href="../libs/simple-line-icons/css/simple-line-icons.css">
+	<link rel="stylesheet" type="text/css" href="../libs/bootstrap-table/bootstrap-table.css">
+	<link rel="stylesheet" type="text/css" href="../libs/bootstrap-daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="../libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="../libs/fullcalendar/fullcalendar.css">
+
+	<link rel="stylesheet" type="text/css" href="../styles/animate.css">
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+	<script type="text/javascript" src="../libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../libs/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../libs/bootstrap-daterangepicker/moment-with-locales.min.js"></script>
+	<script type="text/javascript" src="../libs/jquery-validation/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="../libs/jquery-validation/js/jquery.validate.unobtrusive.js"></script>
+	<script type="text/javascript" src="../libs/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../libs/pace/pace.js"></script>
+	<script type="text/javascript" src="../libs/jquery-nanoScroller/jquery.nanoscroller.js"></script>
+	<script type="text/javascript" src="../libs/bootstrap-table/bootstrap-table.js"></script>
+	<script type="text/javascript" src="../libs/bootstrap-table/bootstrap-table-locale-all.js"></script>
+	<script type="text/javascript" src="../libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+	
+	<script type="text/javascript" src="../scripts/layout.js"></script>
+	<script type="text/javascript" src="vendor.js"></script>
+
+</head>
+<body>
+
+	<div id="container" class="effect mainnav-lg">
+		<!-- Navbar -->
+		<header id="navbar">
+			
+		</header>
+		<!-- Navbar -->
+
+		<div class="boxed">
+			<!--CONTENT CONTAINER-->
+			<!--===================================================-->
+			<div id="content-container">
+
+				<div class="breadcrumbs" id="breadcrumbs">
+					<div class="breadcrumb">
+						<a href="#">Security Vendor Setup</a>		
+						<a href="#" class="active">Security Vendor</a>									
+					</div>
+				</div>
+
+				<div id="page-title">
+					<h1 class="page-header text-overflow">Security Vendor</h1>
+				</div>
+
+				<!-- main content -->
+				<section id="primary-content">
+
+					<div class="row custom-row">
+						
+					<div class="tabpanel">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#basicInfo" data-toggle="tab">Basic Information</a></li>
+								<li><a href="#altInfo" data-toggle="tab">Alternative Information</a></li>
+								<li><a href="#otherInfo" data-toggle="tab">Other Information</a></li>
+							</ul>
+						</div>
+						
+						<div class="tab-content tab-content-custom">
+							<div class="tab-pane fade in active" id="basicInfo">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label for="" class="control-label">Name</label>
+											<input type="text" class="form-control">
+										</div>		
+
+										<div class="form-group">
+											<label for="" class="control-label">Start Time</label>
+											<input type="text" class="form-control datepicker">
+										</div>	
+										
+										<div class="form-group">
+											<label for="" class="control-label">Address1</label>
+											<input type="text" class="form-control">
+										</div>
+
+										<div class="form-group">
+											<label for="" class="control-label">City</label>
+											<select class="form-control">
+												<option value="">Please select one</option>
+												<option value="City1">City 1</option>
+												<option value="City2">City 2</option>
+											</select>
+										</div>
+
+
+									</div>
+
+									<div class="col-lg-6">
+
+										<div class="form-group">
+											<label for="" class="control-label">Status</label>
+											<div class="radio-box">
+												<!-- Inline radio buttons -->
+												<label class="form-radio">
+													<input type="radio" checked="checked" name="def-w-label">Active</label>
+												<label class="form-radio">
+													<input type="radio" name="def-w-label">InActive</label>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="" class="control-label">End Time</label>
+											<input type="text" class="form-control datepicker">
+										</div>	
+
+										<div class="form-group">
+											<label for="" class="control-label">Address2</label>
+											<input type="text" class="form-control">
+										</div>
+
+										<div class="form-group">
+											<label for="" class="control-label">ZipCode</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade in" id="altInfo">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label for="" class="control-label">Name</label>
+											<input type="text" class="form-control">
+										</div>		
+
+										<div class="form-group">
+											<label for="" class="control-label">Address2</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="" class="control-label">ZipCode</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="" class="control-label">Fax</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="col-lg-6">									
+
+
+										<div class="form-group">
+											<label for="" class="control-label">Address1</label>
+											<input type="text" class="form-control">
+										</div>
+										
+										<div class="form-group">
+											<label for="" class="control-label">City</label>
+											<select class="form-control">
+												<option value="">Please select one</option>
+												<option value="City1">City 1</option>
+												<option value="City2">City 2</option>
+											</select>
+										</div>
+
+										<div class="form-group">
+											<label for="" class="control-label">Email</label>
+											<input type="text" class="form-control">
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade in" id="otherInfo">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label for="" class="control-label">SiteCodePrefix</label>
+											<input type="text" class="form-control">
+										</div>		
+
+										<div class="form-group">
+											<label for="" class="control-label">OtherInfo1</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="" class="control-label">Contact Name</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="" class="control-label">Emerg Name</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="col-lg-6">	
+										<div class="form-group">
+											<label for="" class="control-label">LastSiteNo</label>
+											<input type="text" class="form-control">
+										</div>
+
+										<div class="form-group">
+											<label for="" class="control-label">OtherInfo2</label>
+											<input type="text" class="form-control">
+										</div>										
+
+										<div class="form-group">
+											<label for="" class="control-label">Contact Phone</label>
+											<input type="text" class="form-control">
+										</div>
+										
+										<div class="form-group">
+											<label for="" class="control-label">Emerg Phone</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							
+						</div>
+						<div class="btn-bar">
+							<button class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
+						</div>
+					</div>
+
+				</section>
+				<!-- main content -->
+
+			</div>
+
+			<!-- begin aside -->
+			<nav id="mainnav-container">
+				
+			</nav>
+			<!-- end aside -->
+
+		</div>
+
+		<footer id="footer">
+
+			
+
+		</footer>
+	</div>
+
+</body>
+</html>

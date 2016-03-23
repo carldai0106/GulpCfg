@@ -1,0 +1,169 @@
+/*  overwrite bootstrap */
+.label-info {
+  font-weight: normal;
+  border-radius: 1px;
+  padding: 2px 6px;
+}
+.breadcrumbs {
+  position: relative;
+  z-index: auto;
+  border-bottom: 1px solid #dedede;
+  line-height: 40px;
+  padding: 0 12px 0 0;
+  overflow: hidden;
+  background: #F2F2F2;
+  background-image: -webkit-linear-gradient(top, #f8f8f8 0%, #ececec 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#ececec));
+  background-image: linear-gradient(to bottom, #f8f8f8 0%, #ececec 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8f8f8', endColorstr='#ffececec', GradientType=0);
+}
+.breadcrumb {
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.breadcrumb a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  float: left;
+  font-size: 1em;
+  line-height: 40px;
+  color: #808080;
+  /*need more margin on the left of links to accomodate the numbers*/
+  padding: 0 8px 0 30px;
+  position: relative;
+  background: #F2F2F2;
+  background-image: -webkit-linear-gradient(top, #f8f8f8 0%, #ececec 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#ececec));
+  background-image: linear-gradient(to bottom, #f8f8f8 0%, #ececec 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8f8f8', endColorstr='#ffececec', GradientType=0);
+}
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.breadcrumb a:first-child {
+  padding-left: 10px;
+}
+.breadcrumb a:first-child:before,
+.breadcrumb li:first-child:before {
+  left: 14px;
+}
+/*hover/active styles*/
+.breadcrumb a.active,
+.breadcrumb a:hover {
+  background: #333;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  background: linear-gradient(#ffffff, #ffffff);
+}
+.breadcrumb a.active:after,
+.breadcrumb a:hover:after {
+  background: #333;
+  background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background: -webkit-linear-gradient(315deg, #ffffff, #ffffff);
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+}
+/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+.breadcrumb a:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: -20px;
+  /*half of square's length*/
+  /*same dimension as the line-height of .breadcrumb a */
+  width: 40px;
+  height: 40px;
+  /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+    length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+    if diagonal required = 1; length = 1/1.414 = 0.707*/
+  -webkit-transform: scale(0.7) rotate(45deg);
+  -ms-transform: scale(0.707) rotate(45deg);
+      transform: scale(0.707) rotate(45deg);
+  /*we need to prevent the arrows from getting buried under the next link*/
+  z-index: 1;
+  /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+  background: #ddd;
+  background: -webkit-linear-gradient(top, #f8f8f8, #ececec);
+  background: -webkit-linear-gradient(315deg, #f8f8f8, #ececec);
+  background: linear-gradient(135deg, #f8f8f8, #ececec);
+  /*stylish arrow design using box shadow*/
+  -webkit-box-shadow: 1px -1px 0 0 #dedede;
+          box-shadow: 1px -1px 0 0 #dedede;
+  /*box-shadow: 
+        2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+        3px -3px 0 2px rgba(255, 255, 255, 0.1);*/
+  /*
+        5px - for rounded arrows and 
+        50px - to prevent hover glitches on the border created using shadows*/
+  border-radius: 0 5px 0 50px;
+}
+.cancel-modal-body-padding15 {
+  margin: -15px;
+}
+.tab-pane-box {
+  margin: 20px 15px;
+}
+.tabpanel-tools {
+  margin-top: 10px;
+}
+.bootstrap-dialog.type-primary > .modal-dialog > .modal-content > .modal-header {
+  border-bottom: none;
+}
+.hint-wrapper {
+  margin-top: 10px;
+  padding: 6px;
+}
+.panel-title-custom {
+  float: left;
+  margin-top: 5px;
+}
+.search-bar > form .form-group {
+  margin-bottom: 5px;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+}
+.custom-panel-body {
+  padding: 10px 10px 10px 10px;
+}
+.input-group-btn > .btn {
+  height: 34px;
+}
+.nav-tabs > li > a {
+  background: #EAEAEA;
+  border-radius: 4px 4px 0 0;
+  color: #555;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+  background: #fff;
+  color: #555;
+}
+/* Tab Content */
+.tab-content-custom > .tab-pane {
+  background: #fff;
+  -webkit-box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.4);
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  padding: 10px;
+}
+.bootstrap-body-wrapper > .tabpanel > ul.nav-tabs > li > a > b.badge {
+  padding: 2px 7px;
+}
